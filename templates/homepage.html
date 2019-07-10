@@ -1,0 +1,14 @@
+
+<h1> Word count </h1>
+
+<form action ="{% url 'countwordname' %}">
+    <textarea cols="40" rows="5" name="fulltextarea"></textarea>
+    <br />
+    <input type="submit" value="Count!!!" />  toto ti vypocita kolko mas slov v texte
+
+
+</form>
+
+<a href="{% url 'about' %}"> About: </a>
+<br />
+<a href="{% url 'one' %}"> Ist na one: </a>

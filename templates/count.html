@@ -1,0 +1,17 @@
+<h1> Toto je count </h1>
+
+<a href="{% url 'home' %}"> Go back: </a>
+
+
+<h2>Tvoj text s {{ count }} slovami :  </h2>
+{{ fulltext }}
+<br />
+
+{% for word, count_total in sorted_words %}
+<br />
+
+{{ word }} - {{ count_total }}
+<br />
+
+
+{% endfor %}
